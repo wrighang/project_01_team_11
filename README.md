@@ -4,6 +4,7 @@ This is a template that AI helped me produce to help us get started with the rea
 
 
 # Project Title 
+
 ## Table of Contents 
 1. Project Overview
 2. Project Ideation
@@ -56,7 +57,7 @@ Explain the steps taken to clean, preprocess and prepare the data analysis.
 - What inconsistencies or issues did we encounter in the data? 
 - Did we need to remove or fill in any missing values?
 - What methods did we use?
-- Did we create any new columns or variablesz to enhance the analysis?
+- Did we create any new columns or variables to enhance the analysis?
 - Were there any outliers that needed handling? How were they addressed? 
 - Did we document our steps for reproducibility? 
 
@@ -78,7 +79,7 @@ List and describe the visuals created, including their purpose and insights.
 - What types of visuals did we create?
 - What tools or libraries did we use to create them? 
 - How do these visuals help in understanding the data or answering our questions? 
-Are there any annotations or special formatting that helped clarify the visuals? 
+- Are there any annotations or special formatting that helped clarify the visuals? 
 
 # Conclusions & Findings
 ## Summary 
@@ -90,8 +91,8 @@ Summarize the main findings and insights gained from the analysis.
 - How do the results address each questions posed in the ideation phase? 
 What real-workd implications or applications could our findings have?
 
-## Future Work & Improvements
-# Summary 
+# Future Work & Improvements
+## Summary 
 Outline potential improvements or next steps that could be taken if the project were extended.
 
 - Helpful Questions
@@ -100,8 +101,8 @@ Outline potential improvements or next steps that could be taken if the project 
 - What improvements coule we make in data collection, cleaning or methodology?
 - What new questions emerged from our findings that could lead to future projects?
 
-## Repository Structure and File Descriptions
-# Summary
+# Repository Structure and File Descriptions
+## Summary
 Describe the structure of the repository and the purpose of each file.
 
 - Helpful Questions
@@ -109,8 +110,8 @@ Describe the structure of the repository and the purpose of each file.
 - Do we have separate folders for data, notebooks, scripts, and visuals?
 - Are there README files within subfolders explaining their contents?
 
-## Setup and Usage Instructions
-# Summary
+# Setup and Usage Instructions
+## Summary
 Provide instructions for setting up the project environment and running the code.
 
 - Helpful Questions:
@@ -119,13 +120,13 @@ Provide instructions for setting up the project environment and running the code
 How should the user install them (e.g., requirements.txt or conda environment)?
 - Are there specific instructions to fetch data, like running a script or downloading from a source?
 - How does the user navigate through the project files?
-# Example Instructions 
+## Example Instructions 
 1. Clone the Repo
 2. Install Requirements 
 3. Run Data Fetch Script
 4. Open VS Code or Jupyter Notebook
 
-## Contributors 
+# Contributors 
 List all team members adn briefly describe each person;s contributrions to the project, 
 
 - Helpful Questions 
@@ -134,7 +135,7 @@ List all team members adn briefly describe each person;s contributrions to the p
 - Who created the visuals?
 Who contrivuted to the write up and documentation?
 
-##  ADDITIONAL TIPS 
+#  ADDITIONAL TIPS 
 1. Clear, Consistent Formatting: Use bullet points, numbered lists, and headers for easy navigation.
 2. Licenses and References: If applicable, mention any licenses, and link to dataset or API documentation.
 3. Professional Language: Keep language professional, and proofread for clarity and grammar
