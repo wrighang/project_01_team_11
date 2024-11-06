@@ -21,7 +21,8 @@ This is a template that AI helped me produce to help us get started with the rea
 # Project Overview
 ## Description: 
 Provide a brief overview of the project. 
-Why was is chosen, and what are you trying to achieve? 
+Why was is chosen, and what are you trying to achieve?
+
 
 - Helpful Questions
 - What problem are we addressing or what insights are we trying to uncover?
@@ -133,7 +134,7 @@ List all team members adn briefly describe each person;s contributrions to the p
 - Who handled data collection/APU integration
 - Who led the data cleaning and prepping?
 - Who created the visuals?
-Who contrivuted to the write up and documentation?
+- Who contributed to the write up and documentation?
 
 #  ADDITIONAL TIPS 
 1. Clear, Consistent Formatting: Use bullet points, numbered lists, and headers for easy navigation.
