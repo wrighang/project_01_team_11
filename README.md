@@ -173,3 +173,96 @@ Contributions:  Collaborated on data cleaning and preparation, setting up the in
 Contributions: Played a key role in project ideation and coordination, helping to shape the direction of the analysis. Daena was involved in updating project documentation, contributed to the analysis and interpretation of results, and structured and refined the presentation slides. Daena worked on the final research question, editing related slides and code for clarity and consistency with the project’s findings.
 
 Each team member contributed to all major areas—including data preparation, analysis, visualizations, and documentation—and edited their own slides and code based on the research questions they addressed. By collaborating closely, we ensured that each part of the project reflected the combined expertise and input of the entire team. This collective effort was essential in delivering a cohesive and thorough final product.
+
+#### The following lines of code were referenced/obtained from Xpert Learning Assistant/Chat GPT:
+
+### Chat GPT: 
+
+- Facet Grid for Grouped Data: Recommendations to use Seaborn's `FacetGrid` and `barplot` for displaying grouped relationships, such as productivity loss by device type and time spent.
+
+# Defining time spent categories
+
+darkside_df['TimeSpentCategory'] = pd.cut(darkside_df['Total Time Spent'], bins=[0, 50, 100, 150, 200, 250], labels=['0-50', '50-100', '100-150', '150-200', '200-250'])
+
+# Creating a FacetGrid with bar plots for each time spent category
+
+g = sns.FacetGrid(darkside_df, col="TimeSpentCategory", height=4, aspect=0.8)
+
+g.map(sns.barplot, "Device Type", "ProductivityLoss", order=['Smartphone', 'Computer', 'Tablet'])
+
+g.set_axis_labels("Device Type", "Average Productivity Loss")
+
+g.set_titles("Time Spent: {col_name}")
+
+plt.suptitle("Average Productivity Loss by Device Type and Time Spent Category", y=1.05)
+
+plt.tight_layout()
+
+plt.show()
+
+-Added median value labels to a box plot for displaying central tendency in productivity loss by device type, enhancing interpretability without overcrowding the plot.
+
+# Calculate the median values and add as labels
+
+medians = darkside_df.groupby(['Device Type'])['ProductivityLoss'].median().values
+
+positions = range(len(medians))
+
+for pos, median in zip(positions, medians):
+    plt.text(pos, median, f'{median:.2f}', ha='center', va='center', color='black', fontweight='bold') (edited) 
+
+NEW
+
+3:39
+- Scatter Plot Structure: The use of Seaborn's `sns.scatterplot` to display relationships between device type, connection type and productivity loss, with varying point sizes and hues.
+
+#Group by Device Type by Connection Type
+
+# Calculate the average productivity loss by device type and connection type
+
+# Group the data by 'Device Type' and 'Connection Type', then take the mean of 'ProductivityLoss' for each group
+
+device_connection_productivity = darkside_df.groupby(['Device Type', 'Connection Type'])['ProductivityLoss'].mean()
+
+# Calculate the overall mean productivity loss for the annotation line
+
+mean_productivity_loss = device_connection_productivity.mean()
+
+# Reset the index to make 'Device Type' and 'Connection Type' columns
+
+device_connection_productivity = device_connection_productivity.reset_index()
+
+# Scatter plot with Device Type on x-axis, Productivity Loss on y-axis, and Connection Type as color
+
+plt.figure(figsize=(8, 6))
+
+sns.scatterplot(data=device_connection_productivity, x='Device Type', y='ProductivityLoss', hue='Connection Type', style='Connection Type', s=200)
+
+plt.xlabel('Device Type')
+
+plt.ylabel('Average Productivity Loss')
+
+plt.title("Average Productivity Loss by Device Type and Connection Type")
+
+plt.legend(title="Connection Type")
+
+plt.axhline(y=mean_productivity_loss, color='red', linestyle='--', linewidth=1.5, label=f'Average Productivity Loss ({mean_productivity_loss:.2f})')
+
+plt.tight_layout()
+
+plt.show()
+
+### Xpert Learning Assistant:
+
+mobile_usage_df.isna().sum()
+
+device_avg_scroll_rate = cleaned_dataset_df.groupby('Device Type')['Scroll Rate'].mean().round(1)
+
+avg_df.set_index('Device Type', inplace=True)
+
+plt.annotate(line_eq, (0.2, 0.1), fontsize=22, color='red', xycoords='axes fraction', ha='center')
+
+ax = device_avg_scroll_rate.plot(kind='bar', color='blue', stacked=True)
+
+for container in ax.containers:
+    ax.bar_label(container, label_type='edge', fmt='%.0f')
