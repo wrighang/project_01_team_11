@@ -174,7 +174,7 @@ Contributions: Played a key role in project ideation and coordination, helping t
 
 Each team member contributed to all major areas—including data preparation, analysis, visualizations, and documentation—and edited their own slides and code based on the research questions they addressed. By collaborating closely, we ensured that each part of the project reflected the combined expertise and input of the entire team. This collective effort was essential in delivering a cohesive and thorough final product.
 
-#### The following lines of code were referenced/obtained from Xpert Learning Assistant/Chat GPT:
+###### The following lines of code were referenced/obtained from Xpert Learning Assistant/Chat GPT:
 
 ### Chat GPT: 
 
