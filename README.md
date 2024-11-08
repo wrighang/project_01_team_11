@@ -180,11 +180,11 @@ Each team member contributed to all major areas—including data preparation, an
 
 - Facet Grid for Grouped Data: Recommendations to use Seaborn's `FacetGrid` and `barplot` for displaying grouped relationships, such as productivity loss by device type and time spent.
 
-### Defining time spent categories
+### Defining time spent categories:
 
 darkside_df['TimeSpentCategory'] = pd.cut(darkside_df['Total Time Spent'], bins=[0, 50, 100, 150, 200, 250], labels=['0-50', '50-100', '100-150', '150-200', '200-250'])
 
-### Creating a FacetGrid with bar plots for each time spent category
+### Creating a FacetGrid with bar plots for each time spent category:
 
 g = sns.FacetGrid(darkside_df, col="TimeSpentCategory", height=4, aspect=0.8)
 
@@ -202,7 +202,7 @@ plt.show()
 
 -Added median value labels to a box plot for displaying central tendency in productivity loss by device type, enhancing interpretability without overcrowding the plot.
 
-### Calculate the median values and add as labels
+### Calculate the median values and add as labels:
 
 medians = darkside_df.groupby(['Device Type'])['ProductivityLoss'].median().values
 
@@ -216,23 +216,23 @@ NEW
 3:39
 - Scatter Plot Structure: The use of Seaborn's `sns.scatterplot` to display relationships between device type, connection type and productivity loss, with varying point sizes and hues.
 
-### Group by Device Type by Connection Type
+### Group by Device Type by Connection Type:
 
-### Calculate the average productivity loss by device type and connection type
+### Calculate the average productivity loss by device type and connection type:
 
-### Group the data by 'Device Type' and 'Connection Type', then take the mean of 'ProductivityLoss' for each group
+### Group the data by 'Device Type' and 'Connection Type', then take the mean of 'ProductivityLoss' for each group:
 
 device_connection_productivity = darkside_df.groupby(['Device Type', 'Connection Type'])['ProductivityLoss'].mean()
 
-### Calculate the overall mean productivity loss for the annotation line
+### Calculate the overall mean productivity loss for the annotation line:
 
 mean_productivity_loss = device_connection_productivity.mean()
 
-### Reset the index to make 'Device Type' and 'Connection Type' columns
+### Reset the index to make 'Device Type' and 'Connection Type' columns:
 
 device_connection_productivity = device_connection_productivity.reset_index()
 
-### Scatter plot with Device Type on x-axis, Productivity Loss on y-axis, and Connection Type as color
+### Scatter plot with Device Type on x-axis, Productivity Loss on y-axis, and Connection Type as color:
 
 plt.figure(figsize=(8, 6))
 
