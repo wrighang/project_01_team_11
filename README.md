@@ -12,6 +12,7 @@ Behavioral Impact of Social Media Usage on Productivity and Engagement
 8. Future Work and Improvements 
 9. Setup and Usage Instructions
 10. Contributors
+11. Resources and Support
 
 # Project Overview
 ## Description: 
