@@ -1,7 +1,5 @@
 # Team Eleven: Project One
 Behavioral Impact of Social Media Usage on Productivity and Engagement
-# Team Eleven: Project One
-Behavioral Impact of Social Media Usage on Productivity and Engagement
 
 ## Table of Contents 
 1. Project Overview
