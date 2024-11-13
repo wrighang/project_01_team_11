@@ -172,6 +172,7 @@ Prerequisites:
 - gitignore
 - README.md (Provides an overview of the project, methodology, findings, and instructions.)
 - Team_Eleven_Behavioral_Study.ipynb (Notebook containing the final analysis code and visualizations.)
+- Team 11 Project One Presentation Slides (Presentation Slides reviewing project questions and overall summary analysis)
 5. Run Notebook 
 
 - Notes:
