@@ -192,7 +192,7 @@ Each team member contributed to all major areas—including data preparation, an
 
 # The following lines of code was references/obtained from Xpert Learning Assistant/Ghap GPT:
 
-### Chat GPT:
+## Chat GPT:
 
 - Facet Grid for Grouped Data: Recommendations to use Seaborn's `FacetGrid` and `barplot` for displaying grouped relationships, such as productivity loss by device type and time spent.
 
@@ -212,11 +212,7 @@ g.set_titles("Time Spent: {col_name}")
 
 plt.suptitle("Average Productivity Loss by Device Type and Time Spent Category", y=1.05)
 
-plt.tight_layout()
-
-plt.show()
-
--Added median value labels to a box plot for displaying central tendency in productivity loss by device type, enhancing interpretability without overcrowding the plot.
+### Added median value labels to a box plot for displaying central tendency in productivity loss by device type, enhancing interpretability without overcrowding the plot.
 
 ### Calculate the median values and add as labels
 
@@ -226,52 +222,19 @@ positions = range(len(medians))
 for pos, median in zip(positions, medians):
     plt.text(pos, median, f'{median:.2f}', ha='center', va='center', color='black', fontweight='bold') (edited) 
 
-
-
-
-NEW
-
-3:39
-
-- Scatter Plot Structure: The use of Seaborn's `sns.scatterplot` to display relationships between device type, connection type and productivity loss, with varying point sizes and hues.
-
-### Group by Device Type by Connection Type
-
-### Calculate the average productivity loss by device type and connection type
-
-### Group the data by 'Device Type' and 'Connection Type', then take the mean of 'ProductivityLoss' for each group
+### Scatter Plot Structure: The use of Seaborn's `sns.scatterplot` to display relationships between device type, connection type and productivity loss, with varying point sizes and hues.
 
 device_connection_productivity = darkside_df.groupby(['Device Type', 'Connection Type'])['ProductivityLoss'].mean()
 
-### Calculate the overall mean productivity loss for the annotation line
-
 mean_productivity_loss = device_connection_productivity.mean()
-
-### Reset the index to make 'Device Type' and 'Connection Type' columns
 
 device_connection_productivity = device_connection_productivity.reset_index()
 
-### Scatter plot with Device Type on x-axis, Productivity Loss on y-axis, and Connection Type as color
-
-plt.figure(figsize=(8, 6))
-
 sns.scatterplot(data=device_connection_productivity, x='Device Type', y='ProductivityLoss', hue='Connection Type', style='Connection Type', s=200)
-
-plt.xlabel('Device Type')
-
-plt.ylabel('Average Productivity Loss')
-
-plt.title("Average Productivity Loss by Device Type and Connection Type")
-
-plt.legend(title="Connection Type")
 
 plt.axhline(y=mean_productivity_loss, color='red', linestyle='--', linewidth=1.5, label=f'Average Productivity Loss ({mean_productivity_loss:.2f})')
 
-plt.tight_layout()
-
-plt.show()
-
-### Xpert Learning Assistant:
+## Xpert Learning Assistant:
 
 mobile_usage_df.isna().sum()
 
