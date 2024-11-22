@@ -1,92 +1,76 @@
-# Team Eleven: Project One
+# Project One: Team Eleven
 Behavioral Impact of Social Media Usage on Productivity and Engagement
 
+[Project PowerPoint Presentation](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf)
+
+[Project Combined Team Python Notebook](.Team_Eleven_Behavioral_Study.ipynb)
+
 ## Table of Contents 
-1. Project Overview
-2. Project Ideation
-3. Data Collection and API Integration
-4. Data Cleanup and Preparation
-5. Analysis and Methodology
-6. Visualizations
-7. Findings and Conclusion 
-8. Future Work and Improvements 
-9. Setup and Usage Instructions
-10. Contributors
-9. Setup and Usage Instructions
-10. Coding Process
+1. `Project Overview`
+2. `Project Ideation`
+3. `Data Collection & API Integration`
+4. `Data Cleanup & Preparation`
+5. `Analysis & Methodology`
+6. `Visualizations`
+7. `Findings & Conclusion`
+8. `Future Work & Improvements`
+9. `Setup & Usage Instructions`
+10. `Contributors`
+11. `Coding Process`
 
-# Project Overview
-## Description: 
+# 1. `Project Overview`
+## Description
 This project investigates the behavioral impact of social media usage, with a focus on how different factors such as device type, location, profession, and engagement levels influence productivity and social media addiction. By analyzing data related to user habits on various devices, locations, and professions, we aim to uncover insights into how specific behaviors and patterns contribute to productivity loss and social media addiction.
 
-## Project Goals and Objectives:
-Our primary goal is to analyze user data to identify patterns that could help explain the behavioral impact of social media usage. Specifically, we aim to understand how location, device type, profession, engagement levels and scroll rate contribute to addiction levels and productivity loss. Each question brings a different dimension to this analysis, helping us build a comprehensive understanding of the behavioral impacts of social media.
+## Project Goals & Objectives
+The primary goal is to analyze user data to identify patterns that could help explain the behavioral impact of social media usage. Specifically, we aim to understand how location, device type, profession, engagement levels and scroll rate contribute to addiction levels and productivity loss. Each question brings a different dimension to this analysis, helping us build a comprehensive understanding of the behavioral impacts of social media.
 This project investigates the behavioral impact of social media usage, with a focus on how different factors such as device type, location, profession, and engagement levels influence productivity and social media addiction. By analyzing data related to user habits on various devices, locations, and professions, we aim to uncover insights into how specific behaviors and patterns contribute to productivity loss and social media addiction.
 
-# Project Ideation
+# 2. `Project Ideation`
 ## Why This Topic Was Chosen
 As a team, we were interested in understanding the effects of social media on daily productivity, especially since social media has become an integral part of both personal and professional life. We wanted to explore the factors that contribute to social media addiction and productivity loss, as this could provide valuable insights for individuals looking to manage their time better and organizations aiming to enhance workplace productivity. Each team member contributed a unique perspective on the broader question of how social media impacts behavior, resulting in a multifaceted approach to the topic.
 
-# Data Collection and API Integration
+# 3. `Data Collection & API Integration`
 ## Summary 
-Our data collection and integration process focused on identifying a dataset that matched our project goals and setting up an efficient API connection.
+The data collection and integration process focused on identifying a dataset that aligned with the `project goals` and setting up an efficient API connection.
 
-## Initial Data Source Considered: 
-We first explored the "Mobile Device Usage and User Behavior" dataset on Kaggle, but it lacked the detailed geographic data we needed for our analysis.
+## Initial Data Source Considered
+The 'Mobile Device Usage and User Behavior' dataset was first explored on Kaggle, but it lacked the detailed geographic data required for the analysis.
 
 ## Final Dataset Selection
-We chose the "Time Wasters on Social Media" dataset, as it provided more comprehensive geographic and behavioral data. This dataset aligned with our goal of studying regional differences in mobile and social media usage.
+The ['Time Wasters on Social Media' dataset](https://www.kaggle.com/datasets/muhammadroshaanriaz/time-wasters-on-social-media) was chosen, as it provided more comprehensive geographic and behavioral data. This dataset aligned with the goal of studying regional differences in mobile and social media usage.
 
-## API Integration:
+## API Integration
+To retrieve the data, a Kaggle account was created, a token was set up, `Kagglehub` was installed in the development environment, and the necessary code was added to the Python notebook to authenticate directly within the notebook.
 
-To access the data, we set up Kaggle's API by creating an account, generating an API key, and installing “Kagglehub” in our development environment. We then used “Kagglehub” to authenticate and directly fetch the dataset, making it easily accessible within our project structure.
-
-Our data collection and integration process focused on identifying a dataset that matched our project goals and setting up an efficient API connection.
-
-# Data Cleanup and Preparation
+# 4. `Data Cleanup & Preparation`
 ## Addressing Inconsistencies  
-We corrected typos and standardized column names for clarity (e.g., "Barzil" to "Brazil" and "DeviceType" to "Device Type"). Unnecessary columns, such as indexed columns, were removed to streamline the dataset.
+Typos were corrected and column names were standardized for clarity (e.g., 'Barzil' to 'Brazil' and 'DeviceType' to 'Device Type'). Unnecessary columns, such as indexed columns, were removed to streamline the dataset.
 
 ## Handling Missing Values and Duplicates
-We checked for any null values and removed duplicate entries to ensure data accuracy and prevent skewed results.
+Null values were checked for and duplicate entries were removed to ensure data accuracy and prevent skewed results.
 
 ## Outlier Review 
 Extreme values were assessed, and no significant outliers required removal, as the data generally fell within realistic ranges.
 
-## Creating New Variables: 
-We added a "Time Spent" category column to group users into time spent ranges (e.g., "0-50," "50-100") to allow for more insightful analysis of productivity loss across different usage levels.
+## Creating New Variables
+A "Time Spent" category column to group users into time spent ranges (e.g., "0-50," "50-100") to allow for more insightful analysis of productivity loss across different usage levels.
 
-## Reproducibility and Documentation: 
-All data cleaning steps were documented in the README file, and a "data" folder was created to store the cleaned CSV
+## Reproducibility and Documentation
+All data cleaning steps were documented in the README file, and a `data` folder was created to store the [cleaned CSV file](.data/Cleaned_dataset.csv).
 
-## Addressing Inconsistencies  
-We corrected typos and standardized column names for clarity (e.g., "Barzil" to "Brazil" and "DeviceType" to "Device Type"). Unnecessary columns, such as indexed columns, were removed to streamline the dataset.
-
-## Handling Missing Values and Duplicates
-We checked for any null values and removed duplicate entries to ensure data accuracy and prevent skewed results.
-
-## Outlier Review 
-Extreme values were assessed, and no significant outliers required removal, as the data generally fell within realistic ranges.
-
-## Creating New Variables: 
-We added a "Time Spent" category column to group users into time spent ranges (e.g., "0-50," "50-100") to allow for more insightful analysis of productivity loss across different usage levels.
-
-## Reproducibility and Documentation: 
-All data cleaning steps were documented in the README file, and a "data" folder was created to store the cleaned CSV
-
-
-# Analysis and Methodology 
+# 5. `Analysis & Methodology`
 ## Summary
-Our analysis combined correlation analysis and summary statistics to explore patterns in the data and answer our research questions.
+The analysis combined correlation analysis and summary statistics to explore patterns in the data and address the research questions.
 
-To ensure a cohesive approach, we focused on device type as a central theme, using a variety of visualizations to examine behavioral impacts of social media usage. Each question was represented with specific charts that highlighted different aspects of the data.
+To ensure a cohesive approach, device type was used as a central theme, with a variety of visualizations examining the behavioral impacts of social media usage. Each question was represented with specific charts that highlighted different aspects of the data.
  
  ## Key Challenges 
- - Balancing high engagement values against lower scroll rate values required careful visualization choices to ensure clarity.
-- Data imbalance, with certain regions (like India) having more participants, introduced potential skew in some of our analyses.
+- Balancing high engagement values against lower scroll rate values required careful visualization choices to ensure clarity.
+- Data imbalance, with certain regions (like India) having more participants, introduced potential skew in some of the analyses.
 - Some data points lacked consistent measurement units, which posed additional formatting challenges.
 
-# Visualizations 
+# 6. `Visualizations`
 ## Visuals and Key Insights:
 - Scatter Plot: Showed consistent productivity loss across device types, regardless of time spent.
 - Facet Grid Bar Charts: Revealed that smartphones have slightly higher productivity loss, with minimal impact from time spent.
@@ -99,12 +83,12 @@ To ensure a cohesive approach, we focused on device type as a central theme, usi
 - Libraries Used: Matplotlib and Seaborn for all visualizations.
 - Formatting: Consistent labels, color coding, and thoughtful legend placement improved clarity.
 
-# Conclusions & Findings
+# 7. `Findings & Conclusion`
 ## Summary 
-Our analysis yielded several key findings regarding the impact of device type on productivity loss and how it relates to behavioral factors in social media usage.
+The analysis yielded several key findings regarding the impact of device type on productivity loss and its relationship to behavioral factors in social media usage.
 
 ## Support for Initial Hypotheses:
-- Device Impact Hypothesis: Our findings support the hypothesis that device type impacts productivity loss, with smartphones having a more significant negative effect.
+- Device Impact Hypothesis: The findings support the hypothesis that device type impacts productivity loss, with smartphones having a more significant negative effect.
 
 - Behavioral Factors: The results indicate that while time spent does not drastically change productivity loss, other factors like profession and location do play a role.
 
@@ -127,11 +111,11 @@ Due to data limitations, this question was challenging to answer definitively, b
 - Workplace Policies: Employers could develop strategies to manage device usage during work hours, especially in professions more prone to productivity loss.
 
 - App Development: Developers might design apps with features that help reduce distraction and promote productive use.
-Our analysis yielded several key findings regarding the impact of device type on productivity loss and how it relates to behavioral factors in social media usage.
+The analysis yielded several key findings regarding the impact of device type on productivity loss and its relationship to behavioral factors in social media usage.
 
-# Future Work & Improvements
+# 8. `Future Work & Improvements`
 ## Summary 
-Our analysis revealed useful insights but also highlighted areas for improvement and further exploration.
+The analysis revealed useful insights but also highlighted areas for improvement and further exploration.
 
 ## Limitations:
 - Data Imbalance: Some regions had more participants, which may skew results.
@@ -153,15 +137,15 @@ Our analysis revealed useful insights but also highlighted areas for improvement
 - Does notification frequency affect productivity?
 - Can app limits or usage tracking reduce productivity loss?
 
-# Setup and Usage Instructions
+# 9. `Setup & Usage Instructions`
 ## Summary
-To replicate our analysis or explore the data yourself, please follow the instructions below.
+To replicate the analysis or explore the data independently, please follow the instructions below.
 
 Prerequisites:
 - Python 3.7+
 - Jupyter Notebook or Visual Studio Code with Python and Jupyter extensions
 
-1. Clone Repository "https://github.com/DWallace740/team_11project1.git"
+1. Clone [Repository](https://github.com/DWallace740/team_11project1.git)
 2. Create Conda Environment
 3. Install Requirements 
 - pip install kagglehub 
@@ -171,15 +155,15 @@ Prerequisites:
     - Cleaned_dataset.csv (The cleaned dataset ready for analysis)
 - gitignore
 - README.md (Provides an overview of the project, methodology, findings, and instructions.)
-- Team_Eleven_Behavioral_Study.ipynb (Notebook containing the final analysis code and visualizations.)
-- Team 11 Project One Presentation Slides (Presentation Slides reviewing project questions and overall summary analysis)
+- [Team_Eleven_Behavioral_Study.ipynb](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team_Eleven_Behavioral_Study.ipynb) (Notebook containing the final analysis code and visualizations.)
+- [Team 11 Project One Presentation Slides]((https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf)) (Presentation Slides reviewing project questions and overall summary analysis)
 5. Run Notebook 
 
 - Notes:
     - No additional data fetching is required as the dataset is included in the repository.
     - Ensure that your working directory is set to the project root to avoid file path issues.
 
-# Contributors
+# 10. `Contributors`
 ## Angelina Wright
 Contributions: Actively involved in data collection and API integration, data cleaning and preprocessing, and visualization creation. Angelina also contributed to documentation, including the README, and managed version control to ensure seamless collaboration. Angelina worked on slides and code focused on the first two research questions, ensuring they aligned with the overall project goals.
 
@@ -191,7 +175,13 @@ Contributions: Played a key role in project ideation and coordination, helping t
 
 Each team member contributed to all major areas—including data preparation, analysis, visualizations, and documentation—and edited their own slides and code based on the research questions they addressed. By collaborating closely, we ensured that each part of the project reflected the combined expertise and input of the entire team. This collective effort was essential in delivering a cohesive and thorough final product.
 
-# The course activites and following lines of code was referenced/obtained from Xpert Learning Assistant/Chat GPT:
+
+---------------------------------------------------------------------------
+
+
+# 11. `Coding Process`
+
+The course activites and following lines of code was referenced/obtained from Xpert Learning Assistant/Chat GPT:
 
 ## Chat GPT:
 
