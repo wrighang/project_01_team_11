@@ -3,7 +3,7 @@ Behavioral Impact of Social Media Usage on Productivity and Engagement
 
 [Project PowerPoint Presentation](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf)
 
-[Project Combined Team Python Notebook](.Team_Eleven_Behavioral_Study.ipynb)
+[Project Combined Team Python Notebook](https://github.com/DWallace740/team_11project1/blob/main/Team_Eleven_Behavioral_Study.ipynb)
 
 ## Table of Contents 
 1. `Project Overview`
@@ -57,7 +57,7 @@ Extreme values were assessed, and no significant outliers required removal, as t
 A "Time Spent" category column to group users into time spent ranges (e.g., "0-50," "50-100") to allow for more insightful analysis of productivity loss across different usage levels.
 
 ## Reproducibility and Documentation
-All data cleaning steps were documented in the README file, and a `data` folder was created to store the [cleaned CSV file](.data/Cleaned_dataset.csv).
+All data cleaning steps were documented in the README file, and a `data` folder was created to store the [cleaned CSV file](https://github.com/DWallace740/team_11project1/blob/main/data/Cleaned_dataset.csv).
 
 # 5. `Analysis & Methodology`
 ## Summary
