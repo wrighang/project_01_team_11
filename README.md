@@ -1,9 +1,11 @@
 # Project One: Team Eleven
 Behavioral Impact of Social Media Usage on Productivity and Engagement
 
-[Project PowerPoint Presentation](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf)
-
-[Project Combined Team Python Notebook](https://github.com/DWallace740/team_11project1/blob/main/Team_Eleven_Behavioral_Study.ipynb)
+# Deliverable(s)
+Dataset Used: ['Time Wasters on Social Media' dataset](https://www.kaggle.com/datasets/muhammadroshaanriaz/time-wasters-on-social-media)<br>
+[Project Combined Team Python Notebook](https://github.com/DWallace740/team_11project1/blob/main/Team_Eleven_Behavioral_Study.ipynb)<br>
+[Cleaned CSV file](https://github.com/DWallace740/team_11project1/blob/main/data/Cleaned_dataset.csv)<br>
+[Project PowerPoint Presentation](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf)<br>
 
 ## Table of Contents 
 1. `Project Overview`
@@ -38,7 +40,7 @@ The data collection and integration process focused on identifying a dataset tha
 The 'Mobile Device Usage and User Behavior' dataset was first explored on Kaggle, but it lacked the detailed geographic data required for the analysis.
 
 ## Final Dataset Selection
-The ['Time Wasters on Social Media' dataset](https://www.kaggle.com/datasets/muhammadroshaanriaz/time-wasters-on-social-media) was chosen, as it provided more comprehensive geographic and behavioral data. This dataset aligned with the goal of studying regional differences in mobile and social media usage.
+The 'Time Wasters on Social Media' dataset was chosen, as it provided more comprehensive geographic and behavioral data. This dataset aligned with the goal of studying regional differences in mobile and social media usage.
 
 ## API Integration
 To retrieve the data, a Kaggle account was created, a token was set up, `Kagglehub` was installed in the development environment, and the necessary code was added to the Python notebook to authenticate directly within the notebook.
@@ -57,7 +59,7 @@ Extreme values were assessed, and no significant outliers required removal, as t
 A "Time Spent" category column to group users into time spent ranges (e.g., "0-50," "50-100") to allow for more insightful analysis of productivity loss across different usage levels.
 
 ## Reproducibility and Documentation
-All data cleaning steps were documented in the README file, and a `data` folder was created to store the [cleaned CSV file](https://github.com/DWallace740/team_11project1/blob/main/data/Cleaned_dataset.csv).
+All data cleaning steps were documented in the README file, and a `data` folder was created to store the cleaned CSV file.
 
 # 5. `Analysis & Methodology`
 ## Summary
@@ -141,22 +143,22 @@ The analysis revealed useful insights but also highlighted areas for improvement
 ## Summary
 To replicate the analysis or explore the data independently, please follow the instructions below.
 
-Prerequisites:
-- Python 3.7+
-- Jupyter Notebook or Visual Studio Code with Python and Jupyter extensions
+## Prerequisites:
+    - Python 3.7+
+    - Jupyter Notebook or Visual Studio Code with Python and Jupyter extensions
 
 1. Clone [Repository](https://github.com/DWallace740/team_11project1.git)
 2. Create Conda Environment
 3. Install Requirements 
-- pip install kagglehub 
-- pip install seaborn
+    - pip install kagglehub 
+    - pip install seaborn
 4. Navigate Project Files
-- data folder 
-    - Cleaned_dataset.csv (The cleaned dataset ready for analysis)
-- gitignore
-- README.md (Provides an overview of the project, methodology, findings, and instructions.)
-- [Team_Eleven_Behavioral_Study.ipynb](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team_Eleven_Behavioral_Study.ipynb) (Notebook containing the final analysis code and visualizations.)
-- [Team 11 Project One Presentation Slides]((https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf)) (Presentation Slides reviewing project questions and overall summary analysis)
+    - data folder 
+    - [Cleaned CSV file](https://github.com/DWallace740/team_11project1/blob/main/data/Cleaned_dataset.csv) (The cleaned dataset ready for analysis)
+    - gitignore
+    - [README.md](https://github.com/DWallace740/team_11project1/blob/main/README.md) (Provides an overview of the project, methodology, findings, and instructions.)
+    - [Project Combined Team Python Notebook](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team_Eleven_Behavioral_Study.ipynb) (Notebook containing the final analysis code and visualizations)
+    - [Project PowerPoint Presentation](https://github.com/DWallace740/team_11project1/blob/25f8adc8d2b8070d8fa7bfac72ba2dd5ba0a951a/Team%2011%20Project%201.pdf) (Presentation Slides reviewing project questions and overall summary analysis)
 5. Run Notebook 
 
 - Notes:
@@ -175,9 +177,7 @@ Contributions: Played a key role in project ideation and coordination, helping t
 
 Each team member contributed to all major areas—including data preparation, analysis, visualizations, and documentation—and edited their own slides and code based on the research questions they addressed. By collaborating closely, we ensured that each part of the project reflected the combined expertise and input of the entire team. This collective effort was essential in delivering a cohesive and thorough final product.
 
-
----------------------------------------------------------------------------
-
+====================================================================
 
 # 11. `Coding Process`
 
